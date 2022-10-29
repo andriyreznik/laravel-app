@@ -1,6 +1,6 @@
 FROM php:alpine
 
-RUN apk --no-cache --update add git
+RUN apk --no-cache --update add git nodejs npm
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
